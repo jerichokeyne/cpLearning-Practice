@@ -1,1 +1,1 @@
-Goto ("https://www.ubuntu.com", Ubuntu's website) to download a default Ubuntu ISO
+Goto [Ubuntu's website](https://www.ubuntu.com) to download a default Ubuntu ISO
