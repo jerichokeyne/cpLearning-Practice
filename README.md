@@ -25,6 +25,6 @@ Has VMs for Ubuntu
 ### Debian
 Has VMs for Debian
 
-## Windows
+### Windows
 Has instructions to download Windows
 TODO: Either practice VMs or script to setup practice VMs
