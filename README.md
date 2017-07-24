@@ -19,3 +19,12 @@ Provides an introduction into networking concepts
 Provides an introduction into Cisco Networking
 
 ## Practice
+### Ubuntu
+Has VMs for Ubuntu
+
+### Debian
+Has VMs for Debian
+
+## Windows
+Has instructions to download Windows
+TODO: Either practice VMs or script to setup practice VMs
