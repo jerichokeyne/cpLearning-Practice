@@ -27,11 +27,11 @@ When you run this command you should get something similar to this:
 ```
 Desktop  Documents  Downloads  Music  Pictures  Projects  Public  Templates  Videos
 ```
-What you are seeing is all of the files in your current directory (directory is used to mean folder in Unix)
-There's also a decent chance you saw everything in blue (if you didnt see any colors try running `ls --color`)
-When you run `ls` and see blue text that means that file is a directory (yes, folders are files in Unix/Linux)
-Grey text means it is a regular file
-Green text means it is executable
+What you are seeing is all of the files in your current directory (directory is used to mean folder in Unix).
+There's also a decent chance you saw everything in blue (if you didnt see any colors try running `ls --color`).
+When you run `ls` and see blue text that means that file is a directory (yes, folders are files in Unix/Linux).
+Grey text means it is a regular file.
+Green text means it is executable.
 
 If you want to see what files are in a directory use:
 ```Bash
@@ -40,7 +40,7 @@ ls $fileName
 Replace `$fileName` with the name of a file, for example: `ls Desktop`
 
 ### Moving around
-Now, seeing the files are good and all, but what if we want to go into one of those directories.
+Now, being able to see files is good and all, but what if we want to go into one of those directories.
 ```Bash
 cd $fileName
 ```
@@ -53,88 +53,98 @@ Now if you want to go back home you have a few different options
 ```Bash
 cd ~
 ```
-That is the proper way but you can also run just `cd` to get back home
+That is the proper way but you can also run just `cd` to get back home.
 
 Another useful command to know is:
 ```Bash
 cd ..
 ```
-This will take you up one directory
+This will take you up one directory.
 
 Another useful command is:
 ```Bash
 pwd
 ```
-This will print your present working directory
+This will print your present working directory.
 
 ### Making files
 If you want to just create a file you have a few different options, but you should stick to this for now:
 ```Bash
 touch $fileName
 ```
-This will create a file with the name of $fileName in the current directory, again replace $fileName with an actual file name
+This will create a file with the name of $fileName in the current directory, again replace $fileName with an actual file name.
 
-Note: if you want to make a file in a different directory run
+Note: if you want to make a file in a different directory run:
 ```Bash
 touch path/to/file
 ```
-For example: `touch Desktop/hello.txt' or 'touch ~/Desktop/hello.txt', these both can do the same thing. The first uses a relative path, it will make a file named 'hello.txt' in a directory named 'Desktop' that is in your current directory. The second uses an absolute path, it will make a file named 'hello.txt' in a directory named 'Desktop' in your home folder
+For example: `touch Desktop/hello.txt' or 'touch ~/Desktop/hello.txt', these both can do the same thing. The first uses a relative path, it will make a file named 'hello.txt' in a directory named 'Desktop' that is in your current directory. The second uses an absolute path, it will make a file named 'hello.txt' in a directory named 'Desktop' in your home folder.
 
 Now if you want to make a new directory run:
 ```Bash
 mkdir $fileName
 ```
-This will create a directory with the name of $fileName in the current directory
+This will create a directory with the name of $fileName in the current directory.
 
 ### Editing files
 There are lots of file editors, but if you just want to append text to a file or overwrite file you can use the following:
 ```Bash
 echo $text >> $fileName
 ```
-Replace $text with whatever you want and $fileName with the name of a file
-This will append the file with the text you write, for example: `echo hello world >> hello.txt` will append 'hello world' to 'hello.txt'
-If 'hello.txt' doesn't exist it will be created
+Replace $text with whatever you want and $fileName with the name of a file.
+This will append the file with the text you write, for example: `echo hello world >> hello.txt` will append 'hello world' to 'hello.txt'.
+If 'hello.txt' doesn't exist it will be created.
 
 If you don't want to append text use:
 ```Bash
 echo $text > $fileName
 ```
-Be careful with that command, it will completly overwrite the file with the new text
+Be careful with that command, it will completly overwrite the file with the new text.
 
 Now, what if you want to view those files you created:
 ```Bash
 cat $fileName
 ```
-That will print out the contents of a file
+That will print out the contents of a file.
 
-Now what if you want an actual text editor
-You have lots of different choices, here I will mention two, but feel free to go lookup more (eg: vi, vim, emacs, ed)
+Now what if you want an actual text editor.
+You have lots of different choices, here I will mention two, but feel free to go lookup more (eg: vi, vim, emacs, ed).
 For a graphical editor run:
 ```Bash
 gedit $fileName
 ```
-This will open up a file in a normal looking text editor
+This will open up a file in a normal looking text editor.
+```
 Ctrl+s is save
+
 Ctrl+f is search
+
 Ctrl+o is open a new file
+
 Ctrl+n is open a new window
+
 Ctrl+q is exit
+```
 
 For a command line based editor run:
 ```Bash
 nano $fileName
 ```
-There are two bars at the bottom stating common shortcuts, it also says the version of nano and the file name on the top bar
+There are two bars at the bottom stating common shortcuts, it also says the version of nano and the file name on the top bar.
+```
 Ctrl+o is save (write out)
+
 Ctrl+w is search
+
 Ctrl+x is exit
+```
 
 ### Finding Files
 If you want to find a file run:
 ```Bash
 find -name "$fileName"
 ```
-This will recursively search through all the files in the current directory to find a file
+This will recursively search through all the files in the current directory to find a file.
 If you want to find all files with a certain extension (eg: .txt) run:
 ```Bash
 find -name "*.txt"
@@ -149,10 +159,10 @@ If you want to find a string ($string) in a file ($fileName) run:
 ```Bash
 grep $string $fileName
 ```
-This will return all lines with $string inside of $fileName
+This will return all lines with $string inside of $fileName.
 
 If you need the $n lines around that line run:
 ```Bash
 grep -C $n $string $fileName
 ```
-This will give the line with $n lines before that and $n lines after, using `-A` or `-B` instead of `-C` will give you just the lines after or before
+This will give the line with $n lines before that and $n lines after, using `-A` or `-B` instead of `-C` will give you just the lines after or before.

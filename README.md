@@ -1,21 +1,21 @@
-### Introduction
+# Introduction
 This is a repo full of learning and practice material
 
-### Table of Contents
+# Table of Contents
 ## Learning
-# overview.md
+### overview.md
 Provides a high-level overview of the concepts of what we need to know
 
-# linuxCLI.md
+### linuxCLI.md
 Provides an introduction to using the Linux terminal (mainly BASH)
 
-# linuxScript.md
+### linuxScript.md
 Provides an introduction to using BASH to create scripts in Linux
 
-# networking.md
+### networking.md
 Provides an introduction into networking concepts
 
-# cisco.md
+### cisco.md
 Provides an introduction into Cisco Networking
 
 ## Practice
