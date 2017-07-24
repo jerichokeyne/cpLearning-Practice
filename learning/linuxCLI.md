@@ -10,8 +10,11 @@ When you first open the terminal you should see something similar to:
 test@ubuntu-vm:~$
 ```
 `test` - is your username
-`ubuntu-vm` - is your hostnamt
+
+`ubuntu-vm` - is your hostname
+
 `~` - is your current location (in this case the 'home folder')
+
 `$` - means you are running as a standard user (you will see `#` if you are running as `root`)
 
 
