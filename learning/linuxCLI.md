@@ -1,10 +1,10 @@
 Welcome to the guide on learning the Linux command line. Let's jump right in.
 
-### Introduction
+## Introduction
 To open a terminal in Ubuntu go over to the dash and start a search for "Terminal" then open the application.
 On most default installations you can also press Ctrl+Alt+T to open a new terminal.
 
-### Understanding the prompt
+## Understanding the prompt
 When you first open the terminal you should see something similar to:
 ```Bash
 test@ubuntu-vm:~$
@@ -18,7 +18,7 @@ test@ubuntu-vm:~$
 `$` - means you are running as a standard user (you will see `#` if you are running as `root`)
 
 
-### First Command
+## First Command
 Here's a useful command to know:
 ```Bash
 ls
@@ -39,7 +39,7 @@ ls $fileName
 ````
 Replace `$fileName` with the name of a file, for example: `ls Desktop`
 
-### Moving around
+## Moving around
 Now, being able to see files is good and all, but what if we want to go into one of those directories.
 ```Bash
 cd $fileName
@@ -67,7 +67,7 @@ pwd
 ```
 This will print your present working directory.
 
-### Making files
+## Making files
 If you want to just create a file you have a few different options, but you should stick to this for now:
 ```Bash
 touch $fileName
@@ -86,7 +86,7 @@ mkdir $fileName
 ```
 This will create a directory with the name of $fileName in the current directory.
 
-### Editing files
+## Editing files
 There are lots of file editors, but if you just want to append text to a file or overwrite file you can use the following:
 ```Bash
 echo $text >> $fileName
@@ -139,7 +139,7 @@ Ctrl+w is search
 Ctrl+x is exit
 ```
 
-### Finding Files
+## Finding Files
 If you want to find a file run:
 ```Bash
 find -name "$fileName"
@@ -154,7 +154,7 @@ If you want to find all files with a certain string ($string) in the name run:
 find -name "*$string*"
 ```
 
-### Finding Text in Files
+## Finding Text in Files
 If you want to find a string ($string) in a file ($fileName) run:
 ```Bash
 grep $string $fileName
