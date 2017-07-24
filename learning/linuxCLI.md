@@ -27,9 +27,9 @@ When you run this command you should get something similar to this:
 ```
 Desktop  Documents  Downloads  Music  Pictures  Projects  Public  Templates  Videos
 ```
-What you are seeing is all of the files in your current directory (directory is used to mean folder in Unix).
+What you are seeing is all of the files in your current directory (directory meanr folder in Unix/Linux).
 There's also a decent chance you saw everything in blue (if you didnt see any colors try running `ls --color`).
-When you run `ls` and see blue text that means that file is a directory (yes, folders are files in Unix/Linux).
+When you run `ls` and see blue text that means that file is a directory (yes, directories are files in Unix/Linux).
 Grey text means it is a regular file.
 Green text means it is executable.
 
