@@ -1,0 +1,67 @@
+# vim: ft=sent
+Intro to CTFs
+      Jericho Keyne
+
+Overview:
+- What is a CTF?
+- What will we do?
+
+What is a CTF?
+
+CTF -
+Capture The Flag
+
+Useful background knowledge
+
+* Linux
+* Networking
+* Read code
+* Python
+* C
+* Algebra, Trig.
+
+Categories:
+
+Web Exploitation
+
+* HTML
+* JavaScript
+* Burp Suite
+
+Binary Exploitation
+
+* assembly
+* C
+* hexadecimal
+
+Reverse Engineering
+
+* assembly
+* C
+* hexadecimal
+* Radare2
+
+Forensics
+
+* Wireshark
+* hexadecimal
+
+Cryptography
+
+* lots of math
+* scripting
+* data storage
+
+Potential Jobs
+
+* Pen tester
+* Bug bounty
+* Defensive security
+* Really any programming or web design
+
+#@ctftime.org.png
+
+Questions?
+
+Contact
+jkeyne@bhcc.edu
